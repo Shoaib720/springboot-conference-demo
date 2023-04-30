@@ -1,0 +1,18 @@
+server:
+  port: 5000
+
+app:
+  version: 1.0.0
+
+logging:
+  level:
+    org: WARN
+
+spring:
+  datasource:
+    url: ${DB_URL}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none
+      show-sql: false
